@@ -119,6 +119,7 @@ def draw_circles2():
     window = rg.RoseWindow(400, 400)
     for k in range(3, 21):
         circle = rg.Circle(rg.Point((k*20)-10, 100), 10)
+        circle.fill_color = 'blue'
         circle.attach_to(window)
         window.render()
     window.close_on_mouse_click()
